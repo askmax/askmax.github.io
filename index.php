@@ -139,6 +139,13 @@ echo str_replace('\\', '/', __FILE__) ? str_replace('\\', '/', __FILE__) : $_SER
 					?>
 				</td>
 			</tr>
+			  <tr>
+    <td width="13%">服务器时间</td>
+    <td width="37%"><?php echo gmdate("Y年n月j日 H:i:s",time()+8*3600);?></td>
+    <td width="13%">可用空间(磁盘区)</td>
+    <td width="37%"><?php echo round(disk_free_space(".")/(1024*1024),2);?>&nbsp;M</td>
+  </tr>
+  <tr>
 		</table>
 		<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 800px; font-size: 0; line-height: 0;">
 			<div style="position: relative; height: 193px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border:#000000 1px solid;"><iframe src="//www4.cbox.ws/box/?boxid=4254685&boxtag=pbn22x&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain4-4254685" id="cboxmain4-4254685"></iframe></div>
