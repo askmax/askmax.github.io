@@ -23,7 +23,7 @@ date_default_timezone_set('Asia/Shanghai');
 				var todayHour = today.getHours()
 				var todayMinute = today.getMinutes()
 				var todaySecond = today.getSeconds()
-				var t1 = Date.UTC(2015,3,25,11,06,16)
+				var t1 = Date.UTC(2015,3,24,10,02,10)
 				var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
 				var diff = t2-t1
 				var diffYears = Math.floor(diff/years)
