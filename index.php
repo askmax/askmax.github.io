@@ -18,12 +18,12 @@ date_default_timezone_set('Asia/Shanghai');
 				var years = days * 365
 				var today = new Date()
 				var todayYear = today.getFullYear()
-				var todayMonth = today.getMonth()
+				var todayMonth = today.getMonth()+1
 				var todayDate = today.getDate()
 				var todayHour = today.getHours()
 				var todayMinute = today.getMinutes()
 				var todaySecond = today.getSeconds()
-				var t1 = Date.UTC(2015,2,24,10,02,10)
+				var t1 = Date.UTC(2015,3,25,11,06,16)
 				var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
 				var diff = t2-t1
 				var diffYears = Math.floor(diff/years)
